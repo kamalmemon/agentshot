@@ -2,6 +2,9 @@
 
 Screenshot tool for AI coding agents. Capture browser pages (PNG) and terminal output (SVG).
 
+<img width="974" height="614" alt="image" src="https://github.com/user-attachments/assets/6119c50d-a4c9-40db-9071-b3076a313920" />
+
+
 ## Installation
 
 ### 1. Install Go (if needed)
