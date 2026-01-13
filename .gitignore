@@ -1,0 +1,19 @@
+# Binary
+agentshot
+agentshot.exe
+
+# Test outputs
+/tmp/
+*.png
+*.svg
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
