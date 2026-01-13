@@ -43,9 +43,22 @@ Browser: URL → Chromium (headless) → Chrome DevTools Protocol → PNG
 Terminal: Command → PTY → ANSI codes → Parser → SVG
 ```
 
-## Claude Code setup
+## Claude Code setup 
 
-### 1. Allow in Claude Code
+### 1. Add to CLAUDE.md
+
+Add to your project's `CLAUDE.md` or `~/.claude/CLAUDE.md`:
+
+```markdown
+## Screenshots
+
+Use agentshot to capture screenshots when building UI or debugging:
+- After UI changes: `agentshot browser -o /tmp/shot.png http://localhost:3000`
+- Terminal output: `agentshot tui -o /tmp/shot.svg "<command>"`
+Then read the file to view the result.
+```
+
+### 2. Allow in Claude Code (optional)
 
 Add to `~/.claude/settings.json`:
 
@@ -57,19 +70,6 @@ Add to `~/.claude/settings.json`:
     ]
   }
 }
-```
-
-### 2. Add to CLAUDE.md
-
-Add to your project's `CLAUDE.md` or `~/.claude/CLAUDE.md`:
-
-```markdown
-## Screenshots
-
-Use agentshot to capture screenshots when building UI or debugging:
-- After UI changes: `agentshot browser -o /tmp/shot.png http://localhost:3000`
-- Terminal output: `agentshot tui -o /tmp/shot.svg "<command>"`
-Then read the file to view the result.
 ```
 
 ### 3. (Optional) Add slash command
